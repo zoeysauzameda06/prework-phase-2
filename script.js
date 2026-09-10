@@ -1,5 +1,5 @@
 window.onload = function () {
-    initcolorpicker();
+    initColorPicker();
 };
 
 function initColorPicker() {
