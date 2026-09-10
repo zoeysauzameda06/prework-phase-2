@@ -21,10 +21,6 @@ function setColorPickerEventListeners(colorBox, rgb, pickerElements) {
         });
     }
 }
-function setBoxBGColor(colorBox, r, g, b) {
-    colorBox.style.backgroundColor =`rgb(${r}, ${g}, ${b})`;
-}
-
 
     /*rgb.red.addEventListener('change', () => {
         console.log("Red value: ", rgb.red.value);
