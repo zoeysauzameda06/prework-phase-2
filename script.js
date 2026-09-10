@@ -9,11 +9,11 @@ function initColorPicker() {
         green: document.getElementById("green"),
         blue: document.getElementById("blue"),
     };
-    let colorPicker = document.getElementById("picker");
+    let colorPicker = document.getElementsByClassName("picker");
     setColorPickerEventListeners(colorBox, rgb, colorPicker);
 }
 
-function setColorPickerEventListeners(colorBox, rgb, pickerElements) {
+function setColorPickerEventListeners(colorBox, rgb, pickerElements){
 
     for (let i = 0; i < pickerElements.length; i++){
         pickerElements[i].addEventListener('change', () => {
@@ -39,5 +39,4 @@ function setColorPickerEventListeners(colorBox, rgb, pickerElements) {
 function setBoxBGColor(colorBox, red, green, blue) {
     rgbVal = [red, green, blue].join(',');
     colorBox.style.backgroundColor = "rgb(" + rgbVal + ")";
-
 }
