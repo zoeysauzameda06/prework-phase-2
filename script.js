@@ -13,13 +13,17 @@ function initColorPicker() {
     setColorPickerEventListeners(colorBox, rgb, colorPickers);
 }
 
-function setColorPickerEventListeners(colorBox, rgb, pickerElements){
+function setColorPickerEventListeners(colorBox, rgb, pickerElements) {
 
     for (let i = 0; i < pickerElements.length; i++) {
         pickerElements[i].addEventListener('change', () => {
-            setBoxBGcolor(colorBox, rgb.red.value, rgb.green.value, rgb.green.value);
+            setBoxBGColor(colorBox, rgb.red.value, rgb.green.value, rgb.green.value);
         });
-    }}
+    }
+}
+function setBoxBGColor(colorBox, r, g, b) {
+    colorBox.style.backgroundColor =`rgb(${r}, ${g}, ${b})`;
+}
 
 
     /*rgb.red.addEventListener('change', () => {
